@@ -32,17 +32,16 @@ const TodosList =({todos, setTodos, setEditTodo})=> {
                     className={`list ${ todo.completed ? 'complete' : ''}`}
                     onChange={event => event.preventDefault()}
                     />
-                    <div>
-                        <button className="button-complete task-button" onClick={() => handlecomplete(todo)}>
-                            <i className="fa fa-check-circle"></i>
-
+                    <div className='allIcon'>
+                        <button className="button-complete task-button icon" onClick={() => handlecomplete(todo)}>
+                        <i class="fa-regular fa-circle-check"></i>
                         </button>
                         <button className="button-edit task-button" onClick={() => handleEdit(todo)}>
-                            <i className="fa fa-edit"></i>
+                        <i class="fa-regular fa-pen-to-square"></i>
 
                         </button>
                         <button className="button-delete task-button" onClick={() => handledelete(todo)}>
-                            <i className="fa fa-trash"></i>
+                        <i class="fa-regular fa-trash-can"></i>
 
                         </button>
                     </div>
